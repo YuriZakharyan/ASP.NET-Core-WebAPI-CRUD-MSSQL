@@ -26,6 +26,9 @@ namespace ContactsAPI.MiddleWares
                 ///    sw.WriteLine($"RequestBody: {requestBody}");
                 ///}
 
+                ///var s = HttpContext.Current.Request.UserHostName;
+
+
                 await using (StreamWriter sw = File.AppendText(path))
                 {
                     sw.WriteLine("->");

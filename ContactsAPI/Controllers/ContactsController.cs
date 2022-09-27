@@ -53,8 +53,6 @@ namespace ContactsAPI.Controllers
                 ////
                 if (contact != null)
                 {
-                    string sc = Ok(contact).ToString();
-                    
                     //LoggingMethods.Logging("httpGet", "Get Responce Body", null, sc);
                     LoggingMethods.Logging("HttpGet", "requestBody", null, Ok(contact).ToString());
                     return Ok(contact);
